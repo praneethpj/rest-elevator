@@ -1,0 +1,12 @@
+<dataset>
+	<elevator_movements  id="1" time="2016-02-18 10:11:12" elevator_id="A" current_floor_no="1" to_floor_no="0" no_of_people="0" status="TASK_STARTED" />
+	<elevator_movements  id="2" time="2016-02-18 10:11:14" elevator_id="B" current_floor_no="1" to_floor_no="0" no_of_people="0" status="TASK_STARTED" />
+	<elevator_movements  id="3" time="2016-02-18 10:11:17" elevator_id="A" current_floor_no="1" to_floor_no="9" no_of_people="0" status="MOVE_UP" />
+	<elevator_movements  id="4" time="2016-02-18 10:11:19" elevator_id="B" current_floor_no="1" to_floor_no="4" no_of_people="0" status="MOVE_UP" />
+	<elevator_movements  id="5" time="2016-02-18 10:11:22" elevator_id="A" current_floor_no="9" to_floor_no="9" no_of_people="3" status="STAY" />
+	<elevator_movements  id="6" time="2016-02-18 10:11:24" elevator_id="B" current_floor_no="4" to_floor_no="4" no_of_people="7" status="STAY" />
+	<elevator_movements  id="7" time="2016-02-18 10:11:27" elevator_id="A" current_floor_no="9" to_floor_no="4" no_of_people="3" status="MOVE_DOWN" />
+	<elevator_movements  id="8" time="2016-02-18 10:11:29" elevator_id="B" current_floor_no="4" to_floor_no="10" no_of_people="7" status="MOVE_UP" />
+	<elevator_movements  id="9" time="2016-02-18 10:11:32" elevator_id="A" current_floor_no="4" to_floor_no="0" no_of_people="0" status="IDLE" />
+	<elevator_movements  id="10" time="2016-02-18 10:11:34" elevator_id="B" current_floor_no="10" to_floor_no="0" no_of_people="0" status="IDLE" />
+</dataset>
