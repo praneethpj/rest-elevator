@@ -2,6 +2,11 @@ version: 0.0
 os: linux
 
 hooks:
+  BeforeInstall:
+    - location: scripts/pull_image.sh
+      timeout: 20
+      runas: ec2-user
+
   ApplicationStop:
     - location: scripts/kill_container.sh
       timeout: 20
