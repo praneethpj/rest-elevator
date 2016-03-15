@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 public class Application {
 
 	public static void main(String[] args) {
-		System.out.println("Application starts to run.");
+		System.out.println("Elevator Application starts to run.");
 		SpringApplication.run(Application.class, args);
 	}
 }
