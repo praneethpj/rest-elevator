@@ -4,6 +4,7 @@ package com.nie.elevator.business;
  * Encapsulate the customer's request details.
  * 
  * @author lnie
+ * Modified by Praneeth
  *
  */
 public class Task {
@@ -11,6 +12,8 @@ public class Task {
 	private int noOfpeople;
 	private int fromFloorNo;
 	private int toFloorNo;
+	private int eta;
+	
 	
 	public int getNoOfpeople() {
 		return noOfpeople;
@@ -28,7 +31,17 @@ public class Task {
 		return toFloorNo;
 	}
 	public void setToFloorNo(int toFloorNo) {
+	 
 		this.toFloorNo = toFloorNo;
+	}
+ 
+
+	public int getEta() {
+		return eta;
+	}
+
+	public void setEta(int eta) {
+		this.eta = eta;
 	}
 	
 }

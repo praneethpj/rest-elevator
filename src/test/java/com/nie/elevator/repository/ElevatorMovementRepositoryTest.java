@@ -47,7 +47,7 @@ public class ElevatorMovementRepositoryTest {
 		assertThat(elevatorMovements.get(0),
 				allOf(hasProperty("id", is(1)), hasProperty("currentFloorNo", is(1)),
 						hasProperty("toFloorNo", is(0)), hasProperty("noOfPeople", is(0)),
-						hasProperty("status", is(ElevatorStatus.TASK_STARTED))));
+						hasProperty("status", is(ElevatorStatus.DROPOFF))));
 		elevatorMovements.forEach(elevatorMovement -> {
 			assertThat(elevatorMovement,
 					allOf(hasProperty("elevatorID", is("A"))));

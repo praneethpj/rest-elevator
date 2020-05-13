@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<property name="LOG_HOME" value="logs" />
+
+	<property name="LOG_FILE_PREFIX" value="ElevatorApplicationLog" />
+	
+	<include resource="org/springframework/boot/logging/logback/base.xml"/>
+	
+	<include resource="logbackIncludedConfig.xml"/>
+ 
+  	<appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${LOG_HOME}/${LOG_FILE_PREFIX}.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+		    <!-- daily rollover -->
+			<FileNamePattern>${LOG_HOME}/${LOG_FILE_PREFIX}.%d{yyyy-MM-dd}.log</FileNamePattern>
+		</rollingPolicy>
+ 
+		<encoder>
+			<pattern>${FILE_LOG_PATTERN}</pattern>
+		</encoder> 	    
+  	</appender>
+
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="dailyRollingFileAppender" />
+	</root>
+ 
+</configuration>

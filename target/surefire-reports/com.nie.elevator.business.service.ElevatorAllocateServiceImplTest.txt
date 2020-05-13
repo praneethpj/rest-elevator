@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.nie.elevator.business.service.ElevatorAllocateServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec <<< FAILURE! - in com.nie.elevator.business.service.ElevatorAllocateServiceImplTest
+returnClosestIdelElevator(com.nie.elevator.business.service.ElevatorAllocateServiceImplTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[D]> but was:<[C]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.nie.elevator.business.service.ElevatorAllocateServiceImplTest.returnClosestIdelElevator(ElevatorAllocateServiceImplTest.java:119)
+
+whenOnlyOneIdleThenReturnThatOne(com.nie.elevator.business.service.ElevatorAllocateServiceImplTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[D]> but was:<[A]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.nie.elevator.business.service.ElevatorAllocateServiceImplTest.whenOnlyOneIdleThenReturnThatOne(ElevatorAllocateServiceImplTest.java:90)
+
+returnNullWhenNoneIdel(com.nie.elevator.business.service.ElevatorAllocateServiceImplTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected null, but was:<{"ETA:0}>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at com.nie.elevator.business.service.ElevatorAllocateServiceImplTest.returnNullWhenNoneIdel(ElevatorAllocateServiceImplTest.java:77)
+

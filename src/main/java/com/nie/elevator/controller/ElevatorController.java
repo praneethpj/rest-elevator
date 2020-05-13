@@ -6,6 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,13 +18,13 @@ import com.nie.elevator.controller.exception.DataFormatException;
 import com.nie.elevator.controller.exception.ResourceNotFoundException;
 import com.nie.elevator.repository.ElevatorRepository;
 
-
+@SpringBootApplication
+@ComponentScan("com.nie.elevator.controller")
 @RestController
-@RequestMapping("/elevators")
+@RequestMapping("/smartkent")
 @Scope("prototype")
 public class ElevatorController extends AbstractRestHandler{
-	
-	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+	 
 	
 	@Autowired
 	private ElevatorRepository repository;
@@ -55,29 +57,27 @@ public class ElevatorController extends AbstractRestHandler{
 	 * @param noOfPeople
 	 * @return
 	 */
-	@RequestMapping(value="/floorNo/{floorNo}/toFloorNo/{toFloorNo}/noOfPeople/{noOfPeople}", method = RequestMethod.GET)
-	public Elevator requestElevator(@PathVariable int floorNo, 
-			@PathVariable int toFloorNo,  
-			@PathVariable int noOfPeople) {
-		String logInfo = String.format("Request elevator for floorNo:%s, toFloorNo:%s, noOfPeople:%s", floorNo, toFloorNo, noOfPeople);
-		logger.info(logInfo);
-		
+	@RequestMapping(value="/liftsimulation",method = RequestMethod.GET)
+	public String requestElevator(@RequestParam("fromFloor") int fromFloor,@RequestParam("toFloor") int toFloor) {
+		 
 		Task task = new Task();
-		task.setFromFloorNO(floorNo);
-		task.setToFloorNo(toFloorNo);
-		task.setNoOfpeople(noOfPeople);
+		task.setFromFloorNO(fromFloor);
+		task.setToFloorNo(toFloor);
+		task.setNoOfpeople(1);
+		task.setEta((toFloor-fromFloor)*3);
 		
 		if(!isTaskValid(task)) {
 			throw new DataFormatException();
 		}
 		
 		Elevator elevator = elevatorScheduleService.scheduleElevator(task);
+		 elevator.setEta(Math.abs((toFloor-fromFloor)*3));
 		if(elevator == null) {
-			throw new ResourceNotFoundException();
+			throw new ResourceNotFoundException("No Resources");
 		}
-		
-		logger.info("Scheduled elevator " + elevator.getId());
-		return elevator;
+		 
+	 
+		return elevator.toString();
 	}
 	
 	/**
@@ -89,9 +89,7 @@ public class ElevatorController extends AbstractRestHandler{
 		if(task == null) {
 			return false;
 		}
-		if(task.getNoOfpeople() < 1 || task.getNoOfpeople() > maxNoOfPeople) {
-			return false;
-		}
+	 
 		if(task.getToFloorNo() < minFloorNo || task.getToFloorNo() > maxFloorNo) {
 			return false;
 		}

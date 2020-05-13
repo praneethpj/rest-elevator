@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.nie.elevator.business.ElevatorTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.901 sec <<< FAILURE! - in com.nie.elevator.business.ElevatorTest
+testPeopleMoveOut(com.nie.elevator.business.ElevatorTest)  Time elapsed: 4.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.nie.elevator.business.ElevatorTest.testPeopleMoveOut(ElevatorTest.java:43)
+

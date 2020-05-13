@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: com.nie.elevator.controller.ElevatorControllerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 7.863 sec <<< FAILURE! - in com.nie.elevator.controller.ElevatorControllerTest
+testRequestAnElevatorFailsWhenNoOfOpepleIsZero(com.nie.elevator.controller.ElevatorControllerTest)  Time elapsed: 0.092 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenNoOfOpepleIsZero(ElevatorControllerTest.java:132)
+
+testRequestAnElevatorFailsWhenNoOfOpepleOver20(com.nie.elevator.controller.ElevatorControllerTest)  Time elapsed: 0.073 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenNoOfOpepleOver20(ElevatorControllerTest.java:123)
+
+testRequestAnElevatorFailsTheFifthTime(com.nie.elevator.controller.ElevatorControllerTest)  Time elapsed: 0.033 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsTheFifthTime(ElevatorControllerTest.java:96)
+
+testRequestAnElevatorFailsWhenFloorNoIsZero(com.nie.elevator.controller.ElevatorControllerTest)  Time elapsed: 0.073 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenFloorNoIsZero(ElevatorControllerTest.java:141)
+
+testRequestAnElevatorFailsWhenFloorNoIsOverTen(com.nie.elevator.controller.ElevatorControllerTest)  Time elapsed: 0.031 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenFloorNoIsOverTen(ElevatorControllerTest.java:150)
+
+testRequestAnElevator(com.nie.elevator.controller.ElevatorControllerTest)  Time elapsed: 0.022 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevator(ElevatorControllerTest.java:64)
+
+testRequestAnElevatorFailsWhenFromFloorNoSameAsToFloorNo(com.nie.elevator.controller.ElevatorControllerTest)  Time elapsed: 0.023 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenFromFloorNoSameAsToFloorNo(ElevatorControllerTest.java:159)
+
+testRequestAnElevatorFourTimes(com.nie.elevator.controller.ElevatorControllerTest)  Time elapsed: 0.067 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFourTimes(ElevatorControllerTest.java:74)
+

@@ -67,10 +67,10 @@ public class ElevatorAllocateServiceImplTest {
 	
 	@Test
 	public void returnNullWhenNoneIdel() {
-		elevatorA.setStatus(ElevatorStatus.MOVE_DOWN);
-		elevatorB.setStatus(ElevatorStatus.MOVE_UP);
-		elevatorC.setStatus(ElevatorStatus.STAY);
-		elevatorD.setStatus(ElevatorStatus.TASK_STARTED);
+		// elevatorA.setStatus(ElevatorStatus.MOVE_DOWN);
+		// elevatorB.setStatus(ElevatorStatus.MOVE_UP);
+		// elevatorC.setStatus(ElevatorStatus.STAY);
+		// elevatorD.setStatus(ElevatorStatus.TASK_STARTED);
 		
 		when(elevatorRepository.getElevators()).thenReturn(elevators);
 		Elevator elevator = elevatorAllocateService.requestElevator(task);
@@ -79,9 +79,9 @@ public class ElevatorAllocateServiceImplTest {
 	
 	@Test
 	public void whenOnlyOneIdleThenReturnThatOne() {
-		elevatorA.setStatus(ElevatorStatus.MOVE_DOWN);
-		elevatorB.setStatus(ElevatorStatus.MOVE_UP);
-		elevatorC.setStatus(ElevatorStatus.STAY);
+		elevatorA.setStatus(ElevatorStatus.IDLE);
+		elevatorB.setStatus(ElevatorStatus.PICKUP);
+		elevatorC.setStatus(ElevatorStatus.TO_DROPOFF);
 		elevatorD.setStatus(ElevatorStatus.IDLE);
 		
 		when(elevatorRepository.getElevators()).thenReturn(elevators);
@@ -108,7 +108,7 @@ public class ElevatorAllocateServiceImplTest {
 	public void returnClosestIdelElevator() {
 		task.setFromFloorNO(6);
 		elevatorC.setCurrentFloorNo(7);
-		elevatorC.setStatus(ElevatorStatus.MOVE_DOWN);
+		elevatorC.setStatus(ElevatorStatus.DROPOFF);
 		
 		elevatorB.setCurrentFloorNo(2);
 		elevatorD.setCurrentFloorNo(9);

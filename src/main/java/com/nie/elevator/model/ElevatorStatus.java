@@ -3,15 +3,16 @@ package com.nie.elevator.model;
 /**
  * Identify the status of elevator.
  * 
- * IDLE: elevator is idle, can be allocate to a task.
- * TASK_STARTED: elevator has been allocated to start a task.
- * MOVE_UP: elevator is moving up.
- * MOVE_DOWN: elevator is moving down.
- * STAY: elevator is stationary, so people can move in or move out.
+IDLE - no job.
+TO_PICKUP - moving to the floor to pick up the person
+PICKUP - picking up the person.
+TO_DROPOFF - moving to the destination floor
+DROPOFF - dropping off the person on the floor
  * 
  * @author lnie
+ * Modified by Praneeth
  *
  */
 public enum ElevatorStatus {
-	IDLE, TASK_STARTED, MOVE_UP, MOVE_DOWN, STAY
+	IDLE, TO_PICKUP, PICKUP, TO_DROPOFF, DROPOFF
 }

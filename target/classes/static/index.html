@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <style type="text/css">
+	    .redColor{
+	       color: red;
+	    }
+	    .greenColor{
+	      color: green;
+	    }
+    </style>   
+  </head>
+  <body ng-app="myApp">
+    <div class="container" ng-controller="AppController">
+      <div class="page-header">
+        <h1>Elevator Monitor</h1>
+      </div>
+
+      <form class="form-horizontal" role="form" name="floorForm">
+      
+		  <table class="table table-striped">
+		    <thead>
+		      <tr>
+		        <th>Floor</th>
+		        <th>No. of People</th>
+		        <th>Level you wish to go to</th>
+		        <th>Elevator A</th>
+		        <th>Elevator B</th>
+		        <th>Elevator C</th>
+		        <th>Elevator D</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr ng-repeat="floor in floors">
+		        <td>{{floor.floorNo}}</td>
+		        <td><input type="text" ng-model="floor.noOfPeople" ng-change="requestElevator(floor)" ng-keypress='digitsOnly($event)' required/>
+		            <br/>
+		            <span class="redColor" ng-show="floor.noOfPeople > 20">Must be under 20</span>
+		        </td>
+		        <td><select ng-model="floor.toFloorNo" ng-change="requestElevator(floor)" required>
+		              <option ng-repeat="option in floorOptions" value="{{option.id}}">{{option.name}}</option>
+		            </select>
+		        </td>
+		        <td><span ng-bind-html="elevatorStatus(floor, 'A')"></span></td>
+		        <td><span ng-bind-html="elevatorStatus(floor, 'B')"></span></td>
+		        <td><span ng-bind-html="elevatorStatus(floor, 'C')"></span></td>
+		        <td><span ng-bind-html="elevatorStatus(floor, 'D')"></span></td>
+		      </tr>
+		    </tbody>
+		  </table>      
+      
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.js"></script>
+    <script type="text/javascript" src="./app/app.js"></script>
+    <script type="text/javascript" src="./app/controllers.js"></script>
+    <script type="text/javascript" src="./app/services.js"></script>
+  </body>
+</html>

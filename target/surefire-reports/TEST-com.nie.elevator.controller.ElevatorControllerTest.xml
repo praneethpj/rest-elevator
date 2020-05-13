@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nie.elevator.controller.ElevatorControllerTest" time="0.414" tests="8" errors="0" skipped="0" failures="8">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.252-b09"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication"/>
+    <property name="java.runtime.version" value="1.8.0_252-8u252-b09-1ubuntu1-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.4.0-29-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/praneeth"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="praneeth"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_252"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testRequestAnElevatorFailsWhenNoOfOpepleIsZero" classname="com.nie.elevator.controller.ElevatorControllerTest" time="0.092">
+    <failure message="Status expected:&lt;400&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenNoOfOpepleIsZero(ElevatorControllerTest.java:132)
+]]></failure>
+    <system-out><![CDATA[2020-05-13 17:05:49.461  INFO 15433 --- [           main] o.s.t.c.web.WebTestContextBootstrapper   : Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@61b60600, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@27f71195, org.springframework.test.context.support.DirtiesContextTestExecutionListener@340afaf8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6238d5e0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@336f49a1]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.5.RELEASE)
+
+2020-05-13 17:05:49.577  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Starting ElevatorControllerTest on praneeth-X556UV with PID 15433 (/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/test-classes started by praneeth in /home/praneeth/Documents/Spring-boot/AA/ElevatorApplication)
+2020-05-13 17:05:49.579  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4409cae6: startup date [Wed May 13 17:05:49 IST 2020]; root of context hierarchy
+2020-05-13 17:05:49.839  INFO 15433 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-05-13 17:05:50.175  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$cfd33d18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:50.237  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8aec4d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:50.239  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:50.240  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:50.241  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:50.418  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2020-05-13 17:05:50.603  INFO 15433 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-13 17:05:50.605  INFO 15433 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2020-05-13 17:05:50.743  INFO 15433 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-13 17:05:50.746  INFO 15433 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1167 ms
+2020-05-13 17:05:50.907  INFO 15433 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-13 17:05:50.912  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-13 17:05:50.913  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-13 17:05:51.047  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-13 17:05:51.048  INFO 15433 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-13 17:05:51.061  INFO 15433 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-13 17:05:51.065  INFO 15433 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-13 17:05:51.076  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-13 17:05:51.077  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2020-05-13 17:05:51.078  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2020-05-13 17:05:51.174  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: TEST.PUBLIC.ELEVATOR_MOVEMENTS
+2020-05-13 17:05:51.174  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [current_floor_no, to_floor_no, id, time, elevator_id, no_of_people, status]
+2020-05-13 17:05:51.174  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2020-05-13 17:05:51.175  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary_key_2]
+2020-05-13 17:05:51.175  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2020-05-13 17:05:51.177  WARN 15433 --- [           main] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2020-05-13 17:05:51.236  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4409cae6: startup date [Wed May 13 17:05:49 IST 2020]; root of context hierarchy
+2020-05-13 17:05:51.245  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent],methods=[GET]}" onto public java.util.List<com.nie.elevator.business.Elevator> com.nie.elevator.controller.ElevatorController.findElevators()
+2020-05-13 17:05:51.246  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent/floorNo/{floorNo}/toFloorNo/{toFloorNo}/],methods=[GET]}" onto public java.lang.String com.nie.elevator.controller.ElevatorController.requestElevator(int,int)
+2020-05-13 17:05:51.247  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovements()
+2020-05-13 17:05:51.249  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements/{elevatorID}],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovementsOfElevator(java.lang.String)
+2020-05-13 17:05:51.250  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:51.251  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:51.261  INFO 15433 --- [           main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes/static/index.html
+2020-05-13 17:05:51.265  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-05-13 17:05:51.270  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:51.272  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:51.286  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:51.377  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 37047 (http)
+2020-05-13 17:05:51.380  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Started ElevatorControllerTest in 1.861 seconds (JVM running for 11.88)
+2020-05-13 17:05:51.388  INFO 15433 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2020-05-13 17:05:51.389  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-13 17:05:51.393  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+2020-05-13 17:05:51.403  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4409cae6: startup date [Wed May 13 17:05:49 IST 2020]; root of context hierarchy
+2020-05-13 17:05:51.412  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="testRequestAnElevatorFailsWhenNoOfOpepleOver20" classname="com.nie.elevator.controller.ElevatorControllerTest" time="0.073">
+    <failure message="Status expected:&lt;400&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenNoOfOpepleOver20(ElevatorControllerTest.java:123)
+]]></failure>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.5.RELEASE)
+
+2020-05-13 17:05:51.533  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Starting ElevatorControllerTest on praneeth-X556UV with PID 15433 (/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/test-classes started by praneeth in /home/praneeth/Documents/Spring-boot/AA/ElevatorApplication)
+2020-05-13 17:05:51.535  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41167ded: startup date [Wed May 13 17:05:51 IST 2020]; root of context hierarchy
+2020-05-13 17:05:51.699  INFO 15433 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-05-13 17:05:51.793  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$cfd33d18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:51.812  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8aec4d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:51.815  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:51.817  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:51.819  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:51.861  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2020-05-13 17:05:51.863  INFO 15433 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-13 17:05:51.865  INFO 15433 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2020-05-13 17:05:51.872  INFO 15433 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-13 17:05:51.874  INFO 15433 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 339 ms
+2020-05-13 17:05:52.030  INFO 15433 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-13 17:05:52.032  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-13 17:05:52.033  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-13 17:05:52.165  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-13 17:05:52.166  INFO 15433 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-13 17:05:52.177  INFO 15433 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-13 17:05:52.182  INFO 15433 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-13 17:05:52.195  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-13 17:05:52.196  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2020-05-13 17:05:52.197  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2020-05-13 17:05:52.204  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: TEST.PUBLIC.ELEVATOR_MOVEMENTS
+2020-05-13 17:05:52.205  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [current_floor_no, to_floor_no, id, time, elevator_id, no_of_people, status]
+2020-05-13 17:05:52.206  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2020-05-13 17:05:52.206  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary_key_2]
+2020-05-13 17:05:52.207  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2020-05-13 17:05:52.209  WARN 15433 --- [           main] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2020-05-13 17:05:52.278  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41167ded: startup date [Wed May 13 17:05:51 IST 2020]; root of context hierarchy
+2020-05-13 17:05:52.286  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent],methods=[GET]}" onto public java.util.List<com.nie.elevator.business.Elevator> com.nie.elevator.controller.ElevatorController.findElevators()
+2020-05-13 17:05:52.286  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent/floorNo/{floorNo}/toFloorNo/{toFloorNo}/],methods=[GET]}" onto public java.lang.String com.nie.elevator.controller.ElevatorController.requestElevator(int,int)
+2020-05-13 17:05:52.287  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovements()
+2020-05-13 17:05:52.287  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements/{elevatorID}],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovementsOfElevator(java.lang.String)
+2020-05-13 17:05:52.288  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:52.290  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:52.295  INFO 15433 --- [           main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes/static/index.html
+2020-05-13 17:05:52.300  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-05-13 17:05:52.306  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:52.307  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:52.348  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:52.394  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 33509 (http)
+2020-05-13 17:05:52.395  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Started ElevatorControllerTest in 0.914 seconds (JVM running for 12.895)
+2020-05-13 17:05:52.398  INFO 15433 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2020-05-13 17:05:52.399  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-13 17:05:52.403  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+2020-05-13 17:05:52.406  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41167ded: startup date [Wed May 13 17:05:51 IST 2020]; root of context hierarchy
+2020-05-13 17:05:52.411  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="testRequestAnElevatorFailsTheFifthTime" classname="com.nie.elevator.controller.ElevatorControllerTest" time="0.033">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsTheFifthTime(ElevatorControllerTest.java:96)
+]]></failure>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.5.RELEASE)
+
+2020-05-13 17:05:52.527  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Starting ElevatorControllerTest on praneeth-X556UV with PID 15433 (/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/test-classes started by praneeth in /home/praneeth/Documents/Spring-boot/AA/ElevatorApplication)
+2020-05-13 17:05:52.529  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158e6fc2: startup date [Wed May 13 17:05:52 IST 2020]; root of context hierarchy
+2020-05-13 17:05:52.665  INFO 15433 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-05-13 17:05:52.766  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$cfd33d18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:52.779  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8aec4d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:52.780  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:52.781  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:52.788  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:52.836  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2020-05-13 17:05:52.837  INFO 15433 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-13 17:05:52.839  INFO 15433 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2020-05-13 17:05:52.844  INFO 15433 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-13 17:05:52.845  INFO 15433 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 316 ms
+2020-05-13 17:05:52.978  INFO 15433 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-13 17:05:52.983  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-13 17:05:52.984  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-13 17:05:53.107  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-13 17:05:53.108  INFO 15433 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-13 17:05:53.118  INFO 15433 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-13 17:05:53.123  INFO 15433 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-13 17:05:53.138  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-13 17:05:53.139  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2020-05-13 17:05:53.140  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2020-05-13 17:05:53.148  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: TEST.PUBLIC.ELEVATOR_MOVEMENTS
+2020-05-13 17:05:53.149  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [current_floor_no, to_floor_no, id, time, elevator_id, no_of_people, status]
+2020-05-13 17:05:53.150  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2020-05-13 17:05:53.150  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary_key_2]
+2020-05-13 17:05:53.151  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2020-05-13 17:05:53.153  WARN 15433 --- [           main] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2020-05-13 17:05:53.205  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158e6fc2: startup date [Wed May 13 17:05:52 IST 2020]; root of context hierarchy
+2020-05-13 17:05:53.212  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent],methods=[GET]}" onto public java.util.List<com.nie.elevator.business.Elevator> com.nie.elevator.controller.ElevatorController.findElevators()
+2020-05-13 17:05:53.212  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent/floorNo/{floorNo}/toFloorNo/{toFloorNo}/],methods=[GET]}" onto public java.lang.String com.nie.elevator.controller.ElevatorController.requestElevator(int,int)
+2020-05-13 17:05:53.212  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovements()
+2020-05-13 17:05:53.213  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements/{elevatorID}],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovementsOfElevator(java.lang.String)
+2020-05-13 17:05:53.214  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:53.215  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:53.217  INFO 15433 --- [           main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes/static/index.html
+2020-05-13 17:05:53.219  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-05-13 17:05:53.223  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:53.224  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:53.235  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:53.274  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 45829 (http)
+2020-05-13 17:05:53.276  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Started ElevatorControllerTest in 0.802 seconds (JVM running for 13.776)
+2020-05-13 17:05:53.282  INFO 15433 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2020-05-13 17:05:53.283  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-13 17:05:53.287  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2020-05-13 17:05:53.290  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158e6fc2: startup date [Wed May 13 17:05:52 IST 2020]; root of context hierarchy
+2020-05-13 17:05:53.292  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="testRequestAnElevatorFailsWhenFloorNoIsZero" classname="com.nie.elevator.controller.ElevatorControllerTest" time="0.073">
+    <failure message="Status expected:&lt;400&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenFloorNoIsZero(ElevatorControllerTest.java:141)
+]]></failure>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.5.RELEASE)
+
+2020-05-13 17:05:53.364  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Starting ElevatorControllerTest on praneeth-X556UV with PID 15433 (/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/test-classes started by praneeth in /home/praneeth/Documents/Spring-boot/AA/ElevatorApplication)
+2020-05-13 17:05:53.365  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@175bf9c9: startup date [Wed May 13 17:05:53 IST 2020]; root of context hierarchy
+2020-05-13 17:05:53.517  INFO 15433 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-05-13 17:05:53.601  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$cfd33d18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:53.637  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8aec4d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:53.639  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:53.641  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:53.642  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:53.678  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2020-05-13 17:05:53.679  INFO 15433 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-13 17:05:53.680  INFO 15433 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2020-05-13 17:05:53.686  INFO 15433 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-13 17:05:53.687  INFO 15433 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 322 ms
+2020-05-13 17:05:53.807  INFO 15433 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-13 17:05:53.808  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-13 17:05:53.809  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-13 17:05:53.915  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-13 17:05:53.916  INFO 15433 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-13 17:05:53.933  INFO 15433 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-13 17:05:53.938  INFO 15433 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-13 17:05:53.957  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-13 17:05:53.957  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2020-05-13 17:05:53.958  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2020-05-13 17:05:53.969  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: TEST.PUBLIC.ELEVATOR_MOVEMENTS
+2020-05-13 17:05:53.970  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [current_floor_no, to_floor_no, id, time, elevator_id, no_of_people, status]
+2020-05-13 17:05:53.970  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2020-05-13 17:05:53.971  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary_key_2]
+2020-05-13 17:05:53.973  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2020-05-13 17:05:53.976  WARN 15433 --- [           main] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2020-05-13 17:05:54.037  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@175bf9c9: startup date [Wed May 13 17:05:53 IST 2020]; root of context hierarchy
+2020-05-13 17:05:54.047  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent],methods=[GET]}" onto public java.util.List<com.nie.elevator.business.Elevator> com.nie.elevator.controller.ElevatorController.findElevators()
+2020-05-13 17:05:54.048  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent/floorNo/{floorNo}/toFloorNo/{toFloorNo}/],methods=[GET]}" onto public java.lang.String com.nie.elevator.controller.ElevatorController.requestElevator(int,int)
+2020-05-13 17:05:54.049  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovements()
+2020-05-13 17:05:54.050  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements/{elevatorID}],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovementsOfElevator(java.lang.String)
+2020-05-13 17:05:54.051  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:54.052  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:54.054  INFO 15433 --- [           main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes/static/index.html
+2020-05-13 17:05:54.057  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-05-13 17:05:54.060  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:54.060  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:54.072  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:54.112  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 44021 (http)
+2020-05-13 17:05:54.115  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Started ElevatorControllerTest in 0.799 seconds (JVM running for 14.615)
+2020-05-13 17:05:54.119  INFO 15433 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2020-05-13 17:05:54.121  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-13 17:05:54.125  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+2020-05-13 17:05:54.128  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@175bf9c9: startup date [Wed May 13 17:05:53 IST 2020]; root of context hierarchy
+2020-05-13 17:05:54.130  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="testRequestAnElevatorFailsWhenFloorNoIsOverTen" classname="com.nie.elevator.controller.ElevatorControllerTest" time="0.031">
+    <failure message="Status expected:&lt;400&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenFloorNoIsOverTen(ElevatorControllerTest.java:150)
+]]></failure>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.5.RELEASE)
+
+2020-05-13 17:05:54.237  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Starting ElevatorControllerTest on praneeth-X556UV with PID 15433 (/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/test-classes started by praneeth in /home/praneeth/Documents/Spring-boot/AA/ElevatorApplication)
+2020-05-13 17:05:54.239  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c200e57: startup date [Wed May 13 17:05:54 IST 2020]; root of context hierarchy
+2020-05-13 17:05:54.409  INFO 15433 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-05-13 17:05:54.516  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$cfd33d18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:54.534  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8aec4d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:54.538  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:54.540  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:54.543  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:54.593  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2020-05-13 17:05:54.594  INFO 15433 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-13 17:05:54.594  INFO 15433 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2020-05-13 17:05:54.599  INFO 15433 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-13 17:05:54.603  INFO 15433 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 364 ms
+2020-05-13 17:05:54.729  INFO 15433 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-13 17:05:54.730  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-13 17:05:54.730  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-13 17:05:54.838  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-13 17:05:54.839  INFO 15433 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-13 17:05:54.847  INFO 15433 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-13 17:05:54.850  INFO 15433 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-13 17:05:54.864  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-13 17:05:54.864  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2020-05-13 17:05:54.865  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2020-05-13 17:05:54.872  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: TEST.PUBLIC.ELEVATOR_MOVEMENTS
+2020-05-13 17:05:54.873  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [current_floor_no, to_floor_no, id, time, elevator_id, no_of_people, status]
+2020-05-13 17:05:54.874  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2020-05-13 17:05:54.874  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary_key_2]
+2020-05-13 17:05:54.878  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2020-05-13 17:05:54.880  WARN 15433 --- [           main] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2020-05-13 17:05:54.928  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c200e57: startup date [Wed May 13 17:05:54 IST 2020]; root of context hierarchy
+2020-05-13 17:05:54.936  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent],methods=[GET]}" onto public java.util.List<com.nie.elevator.business.Elevator> com.nie.elevator.controller.ElevatorController.findElevators()
+2020-05-13 17:05:54.936  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent/floorNo/{floorNo}/toFloorNo/{toFloorNo}/],methods=[GET]}" onto public java.lang.String com.nie.elevator.controller.ElevatorController.requestElevator(int,int)
+2020-05-13 17:05:54.937  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovements()
+2020-05-13 17:05:54.937  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements/{elevatorID}],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovementsOfElevator(java.lang.String)
+2020-05-13 17:05:54.938  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:54.938  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:54.941  INFO 15433 --- [           main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes/static/index.html
+2020-05-13 17:05:54.944  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-05-13 17:05:54.949  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:54.949  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:54.960  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:54.991  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 43285 (http)
+2020-05-13 17:05:54.992  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Started ElevatorControllerTest in 0.798 seconds (JVM running for 15.492)
+2020-05-13 17:05:54.995  INFO 15433 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2020-05-13 17:05:54.995  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-13 17:05:55.002  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 6 ms
+2020-05-13 17:05:55.009  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c200e57: startup date [Wed May 13 17:05:54 IST 2020]; root of context hierarchy
+2020-05-13 17:05:55.013  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="testRequestAnElevator" classname="com.nie.elevator.controller.ElevatorControllerTest" time="0.022">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevator(ElevatorControllerTest.java:64)
+]]></failure>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.5.RELEASE)
+
+2020-05-13 17:05:55.078  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Starting ElevatorControllerTest on praneeth-X556UV with PID 15433 (/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/test-classes started by praneeth in /home/praneeth/Documents/Spring-boot/AA/ElevatorApplication)
+2020-05-13 17:05:55.080  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c5bb37d: startup date [Wed May 13 17:05:55 IST 2020]; root of context hierarchy
+2020-05-13 17:05:55.238  INFO 15433 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-05-13 17:05:55.329  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$cfd33d18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:55.341  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8aec4d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:55.342  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:55.343  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:55.343  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:55.377  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2020-05-13 17:05:55.378  INFO 15433 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-13 17:05:55.379  INFO 15433 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2020-05-13 17:05:55.384  INFO 15433 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-13 17:05:55.386  INFO 15433 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 306 ms
+2020-05-13 17:05:55.480  INFO 15433 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-13 17:05:55.481  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-13 17:05:55.481  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-13 17:05:55.590  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-13 17:05:55.590  INFO 15433 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-13 17:05:55.598  INFO 15433 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-13 17:05:55.602  INFO 15433 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-13 17:05:55.611  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-13 17:05:55.613  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2020-05-13 17:05:55.614  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2020-05-13 17:05:55.623  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: TEST.PUBLIC.ELEVATOR_MOVEMENTS
+2020-05-13 17:05:55.624  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [current_floor_no, to_floor_no, id, time, elevator_id, no_of_people, status]
+2020-05-13 17:05:55.627  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2020-05-13 17:05:55.628  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary_key_2]
+2020-05-13 17:05:55.630  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2020-05-13 17:05:55.631  WARN 15433 --- [           main] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2020-05-13 17:05:55.685  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c5bb37d: startup date [Wed May 13 17:05:55 IST 2020]; root of context hierarchy
+2020-05-13 17:05:55.691  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent],methods=[GET]}" onto public java.util.List<com.nie.elevator.business.Elevator> com.nie.elevator.controller.ElevatorController.findElevators()
+2020-05-13 17:05:55.691  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent/floorNo/{floorNo}/toFloorNo/{toFloorNo}/],methods=[GET]}" onto public java.lang.String com.nie.elevator.controller.ElevatorController.requestElevator(int,int)
+2020-05-13 17:05:55.692  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovements()
+2020-05-13 17:05:55.692  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements/{elevatorID}],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovementsOfElevator(java.lang.String)
+2020-05-13 17:05:55.692  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:55.692  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:55.695  INFO 15433 --- [           main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes/static/index.html
+2020-05-13 17:05:55.697  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-05-13 17:05:55.701  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:55.702  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:55.714  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:55.747  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 45189 (http)
+2020-05-13 17:05:55.749  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Started ElevatorControllerTest in 0.72 seconds (JVM running for 16.248)
+2020-05-13 17:05:55.753  INFO 15433 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2020-05-13 17:05:55.753  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-13 17:05:55.758  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+2020-05-13 17:05:55.761  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c5bb37d: startup date [Wed May 13 17:05:55 IST 2020]; root of context hierarchy
+2020-05-13 17:05:55.764  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="testRequestAnElevatorFailsWhenFromFloorNoSameAsToFloorNo" classname="com.nie.elevator.controller.ElevatorControllerTest" time="0.023">
+    <failure message="Status expected:&lt;400&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<400> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFailsWhenFromFloorNoSameAsToFloorNo(ElevatorControllerTest.java:159)
+]]></failure>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.5.RELEASE)
+
+2020-05-13 17:05:55.830  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Starting ElevatorControllerTest on praneeth-X556UV with PID 15433 (/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/test-classes started by praneeth in /home/praneeth/Documents/Spring-boot/AA/ElevatorApplication)
+2020-05-13 17:05:55.832  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6dc7b7f: startup date [Wed May 13 17:05:55 IST 2020]; root of context hierarchy
+2020-05-13 17:05:55.971  INFO 15433 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-05-13 17:05:56.052  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$cfd33d18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.069  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8aec4d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.070  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.071  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.072  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.110  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2020-05-13 17:05:56.111  INFO 15433 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-13 17:05:56.111  INFO 15433 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2020-05-13 17:05:56.125  INFO 15433 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-13 17:05:56.129  INFO 15433 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 297 ms
+2020-05-13 17:05:56.269  INFO 15433 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-13 17:05:56.270  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-13 17:05:56.270  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-13 17:05:56.368  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-13 17:05:56.369  INFO 15433 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-13 17:05:56.377  INFO 15433 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-13 17:05:56.384  INFO 15433 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-13 17:05:56.400  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-13 17:05:56.401  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2020-05-13 17:05:56.402  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2020-05-13 17:05:56.408  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: TEST.PUBLIC.ELEVATOR_MOVEMENTS
+2020-05-13 17:05:56.416  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [current_floor_no, to_floor_no, id, time, elevator_id, no_of_people, status]
+2020-05-13 17:05:56.417  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2020-05-13 17:05:56.419  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary_key_2]
+2020-05-13 17:05:56.420  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2020-05-13 17:05:56.423  WARN 15433 --- [           main] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2020-05-13 17:05:56.476  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6dc7b7f: startup date [Wed May 13 17:05:55 IST 2020]; root of context hierarchy
+2020-05-13 17:05:56.482  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent],methods=[GET]}" onto public java.util.List<com.nie.elevator.business.Elevator> com.nie.elevator.controller.ElevatorController.findElevators()
+2020-05-13 17:05:56.482  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent/floorNo/{floorNo}/toFloorNo/{toFloorNo}/],methods=[GET]}" onto public java.lang.String com.nie.elevator.controller.ElevatorController.requestElevator(int,int)
+2020-05-13 17:05:56.482  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovements()
+2020-05-13 17:05:56.482  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements/{elevatorID}],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovementsOfElevator(java.lang.String)
+2020-05-13 17:05:56.483  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:56.484  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:56.486  INFO 15433 --- [           main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes/static/index.html
+2020-05-13 17:05:56.488  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-05-13 17:05:56.491  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:56.492  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:56.506  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:56.543  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 42829 (http)
+2020-05-13 17:05:56.545  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Started ElevatorControllerTest in 0.771 seconds (JVM running for 17.045)
+2020-05-13 17:05:56.552  INFO 15433 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2020-05-13 17:05:56.553  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-13 17:05:56.557  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+2020-05-13 17:05:56.560  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6dc7b7f: startup date [Wed May 13 17:05:55 IST 2020]; root of context hierarchy
+2020-05-13 17:05:56.562  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+  <testcase name="testRequestAnElevatorFourTimes" classname="com.nie.elevator.controller.ElevatorControllerTest" time="0.067">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:653)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:152)
+	at com.nie.elevator.controller.ElevatorControllerTest.testRequestAnElevatorFourTimes(ElevatorControllerTest.java:74)
+]]></failure>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.5.RELEASE)
+
+2020-05-13 17:05:56.616  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Starting ElevatorControllerTest on praneeth-X556UV with PID 15433 (/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/test-classes started by praneeth in /home/praneeth/Documents/Spring-boot/AA/ElevatorApplication)
+2020-05-13 17:05:56.618  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6805415d: startup date [Wed May 13 17:05:56 IST 2020]; root of context hierarchy
+2020-05-13 17:05:56.751  INFO 15433 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-05-13 17:05:56.845  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$cfd33d18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.867  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8aec4d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.868  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.870  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.871  INFO 15433 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-13 17:05:56.909  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2020-05-13 17:05:56.909  INFO 15433 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-13 17:05:56.910  INFO 15433 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2020-05-13 17:05:56.914  INFO 15433 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-13 17:05:56.921  INFO 15433 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 303 ms
+2020-05-13 17:05:57.061  INFO 15433 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-13 17:05:57.062  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-13 17:05:57.063  INFO 15433 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-13 17:05:57.156  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-13 17:05:57.157  INFO 15433 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-13 17:05:57.164  INFO 15433 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-13 17:05:57.167  INFO 15433 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-13 17:05:57.175  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-05-13 17:05:57.176  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2020-05-13 17:05:57.178  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2020-05-13 17:05:57.184  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: TEST.PUBLIC.ELEVATOR_MOVEMENTS
+2020-05-13 17:05:57.185  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [current_floor_no, to_floor_no, id, time, elevator_id, no_of_people, status]
+2020-05-13 17:05:57.186  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2020-05-13 17:05:57.187  INFO 15433 --- [           main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary_key_2]
+2020-05-13 17:05:57.187  INFO 15433 --- [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2020-05-13 17:05:57.189  WARN 15433 --- [           main] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2020-05-13 17:05:57.235  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6805415d: startup date [Wed May 13 17:05:56 IST 2020]; root of context hierarchy
+2020-05-13 17:05:57.241  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent],methods=[GET]}" onto public java.util.List<com.nie.elevator.business.Elevator> com.nie.elevator.controller.ElevatorController.findElevators()
+2020-05-13 17:05:57.241  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent/floorNo/{floorNo}/toFloorNo/{toFloorNo}/],methods=[GET]}" onto public java.lang.String com.nie.elevator.controller.ElevatorController.requestElevator(int,int)
+2020-05-13 17:05:57.241  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovements()
+2020-05-13 17:05:57.242  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/elevatormovements/{elevatorID}],methods=[GET]}" onto public java.util.List<com.nie.elevator.model.ElevatorMovement> com.nie.elevator.controller.ElevatorMovementController.findElevatorMovementsOfElevator(java.lang.String)
+2020-05-13 17:05:57.242  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:57.243  INFO 15433 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2020-05-13 17:05:57.245  INFO 15433 --- [           main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes/static/index.html
+2020-05-13 17:05:57.247  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-05-13 17:05:57.251  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:57.251  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:57.269  INFO 15433 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-13 17:05:57.305  INFO 15433 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 40449 (http)
+2020-05-13 17:05:57.307  INFO 15433 --- [           main] c.n.e.controller.ElevatorControllerTest  : Started ElevatorControllerTest in 0.735 seconds (JVM running for 17.807)
+2020-05-13 17:05:57.310  INFO 15433 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet ''
+2020-05-13 17:05:57.310  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2020-05-13 17:05:57.312  INFO 15433 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2020-05-13 17:05:57.314  INFO 15433 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6805415d: startup date [Wed May 13 17:05:56 IST 2020]; root of context hierarchy
+2020-05-13 17:05:57.316  INFO 15433 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+]]></system-out>
+  </testcase>
+</testsuite>

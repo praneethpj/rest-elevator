@@ -1,0 +1,7 @@
+com/nie/elevator/business/service/ElevatorAllocateServiceImplTest.class
+com/nie/elevator/controller/ElevatorControllerTest$1.class
+com/nie/elevator/controller/ElevatorMovementControllerTest.class
+com/nie/elevator/repository/ElevatorMovementRepositoryTest.class
+com/nie/elevator/controller/ElevatorControllerTest.class
+com/nie/elevator/business/ElevatorTest.class
+com/nie/elevator/business/ElevatorRunnerTest.class

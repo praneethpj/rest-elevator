@@ -14,6 +14,7 @@ import com.nie.elevator.model.ElevatorStatus;
 /**
  * Repository of elevators.
  * @author lnie
+ * Modified by Praneeth
  *
  */
 @Repository
@@ -23,7 +24,7 @@ public class ElevatorRepository {
 	
 	@PostConstruct
 	public void init() {
-		Arrays.asList("A", "B", "C", "D").forEach(number -> {
+		Arrays.asList("1", "2").forEach(number -> {
 			Elevator elevator = new Elevator(number);
 			elevator.setStatus(ElevatorStatus.IDLE);
 			elevator.setCurrentFloorNo(1);
