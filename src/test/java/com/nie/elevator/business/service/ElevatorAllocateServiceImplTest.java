@@ -79,7 +79,7 @@ public class ElevatorAllocateServiceImplTest {
 	
 	@Test
 	public void whenOnlyOneIdleThenReturnThatOne() {
-		elevatorA.setStatus(ElevatorStatus.IDLE);
+		elevatorA.setStatus(ElevatorStatus.IDLE); 
 		elevatorB.setStatus(ElevatorStatus.PICKUP);
 		elevatorC.setStatus(ElevatorStatus.TO_DROPOFF);
 		elevatorD.setStatus(ElevatorStatus.IDLE);

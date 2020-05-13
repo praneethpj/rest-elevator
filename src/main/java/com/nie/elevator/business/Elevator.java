@@ -72,7 +72,7 @@ public class Elevator implements ElevatorReceiver{
 
 	/**
 	 * Move elevator to toFloorNo
-	 */
+	 */  
 	@Override
 	public synchronized void moveElevator(int toFloorNo) throws ElevatorException {
 		this.toFloorNo = toFloorNo;
