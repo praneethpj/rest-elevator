@@ -39,3 +39,67 @@
 2020-05-14 06:08:48.381  INFO 4990 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
 2020-05-14 06:08:48.547  INFO 4990 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
 2020-05-14 06:08:48.549  INFO 4990 --- [main] com.nie.elevator.Application             : Started Application in 9.981 seconds (JVM running for 23.726)
+2020-05-14 06:09:25.671  INFO 4990 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-14 06:09:25.672  INFO 4990 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-14 06:09:25.700  INFO 4990 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2020-05-14 06:09:25.831  INFO 4990 --- [http-nio-8081-exec-1] com.nie.elevator.business.Elevator       : 1589416765831.123 {liftId:1,state:IDLE,direction:NAN, person:0, toFloorNo:1}
+2020-05-14 06:09:28.985  INFO 4990 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416768985.123 {liftId:1,state:TO_PICKUP,direction:UP, person:0, toFloorNo:9}
+2020-05-14 06:09:28.986  INFO 4990 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416768986.123 {liftId:1,state:TO_PICKUP,direction:UP, person:0, toFloorNo:9}
+2020-05-14 06:09:32.988  INFO 4990 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416772988.123 {liftId:1,state:PICKUP,direction:UP, person:0, toFloorNo:9}
+2020-05-14 06:09:32.989  INFO 4990 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416772989.123 {liftId:1,state:PICKUP,direction:UP, person:0, toFloorNo:9}
+2020-05-14 06:09:35.992  INFO 4990 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416775992.123 {liftId:1,state:TO_PICKUP,direction:DOWN, person:0, toFloorNo:5}
+2020-05-14 06:09:35.993  INFO 4990 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416775993.123 {liftId:1,state:TO_PICKUP,direction:DOWN, person:0, toFloorNo:5}
+2020-05-14 06:09:39.996  INFO 4990 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416779996.123 {liftId:1,state:IDLE,direction:DOWN, person:0, toFloorNo:1}
+2020-05-14 06:09:39.997  INFO 4990 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416779997.123 {liftId:1,state:DROPOFF,direction:DOWN, person:0, toFloorNo:1}
+2020-05-14 06:10:30.013  INFO 4990 --- [Thread-2] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24b53452: startup date [Thu May 14 06:08:39 IST 2020]; root of context hierarchy
+2020-05-14 06:10:30.015  INFO 4990 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-05-14 06:10:30.020  INFO 4990 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-14 06:10:30.020  INFO 4990 --- [Thread-2] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2020-05-14 06:10:30.025  INFO 4990 --- [Thread-2] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2020-05-14 06:10:36.582  INFO 5262 --- [main] com.nie.elevator.Application             : Starting Application on praneeth-X556UV with PID 5262 (/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes started by praneeth in /home/praneeth/Documents/Spring-boot/AA/ElevatorApplication)
+2020-05-14 06:10:36.620  INFO 5262 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1685a59a: startup date [Thu May 14 06:10:36 IST 2020]; root of context hierarchy
+2020-05-14 06:10:37.392  INFO 5262 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2020-05-14 06:10:37.974  INFO 5262 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.ProxyAsyncConfiguration' of type [class org.springframework.scheduling.annotation.ProxyAsyncConfiguration$$EnhancerBySpringCGLIB$$c55e7212] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-14 06:10:38.123  INFO 5262 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ae39f9d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-14 06:10:38.145  INFO 5262 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-14 06:10:38.162  INFO 5262 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-14 06:10:38.171  INFO 5262 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-14 06:10:38.567  INFO 5262 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2020-05-14 06:10:38.966  INFO 5262 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-14 06:10:38.967  INFO 5262 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2020-05-14 06:10:39.117  INFO 5262 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-14 06:10:39.119  INFO 5262 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2499 ms
+2020-05-14 06:10:40.031  INFO 5262 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-14 06:10:40.037  INFO 5262 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-14 06:10:40.039  INFO 5262 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-14 06:10:40.343  INFO 5262 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-14 06:10:40.357  INFO 5262 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-14 06:10:40.451  INFO 5262 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.10.Final}
+2020-05-14 06:10:40.453  INFO 5262 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-14 06:10:40.455  INFO 5262 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-14 06:10:40.745  INFO 5262 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2020-05-14 06:10:41.062  INFO 5262 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-14 06:10:41.238  INFO 5262 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-14 06:10:41.523  INFO 5262 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2020-05-14 06:10:41.547  INFO 5262 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2020-05-14 06:10:42.131  INFO 5262 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1685a59a: startup date [Thu May 14 06:10:36 IST 2020]; root of context hierarchy
+2020-05-14 06:10:42.211  INFO 5262 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent/liftsimulation],methods=[GET]}" onto public java.lang.String com.nie.elevator.controller.ElevatorController.requestElevator(int,int)
+2020-05-14 06:10:42.213  INFO 5262 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/smartkent],methods=[GET]}" onto public java.util.List<com.nie.elevator.business.Elevator> com.nie.elevator.controller.ElevatorController.findElevators()
+2020-05-14 06:10:42.214  INFO 5262 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2020-05-14 06:10:42.215  INFO 5262 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-14 06:10:42.221  INFO 5262 --- [main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/home/praneeth/Documents/Spring-boot/AA/ElevatorApplication/target/classes/static/index.html
+2020-05-14 06:10:42.237  INFO 5262 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-05-14 06:10:42.252  INFO 5262 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-14 06:10:42.253  INFO 5262 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-14 06:10:42.312  INFO 5262 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-14 06:10:42.454  INFO 5262 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-14 06:10:42.529  INFO 5262 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2020-05-14 06:10:42.532  INFO 5262 --- [main] com.nie.elevator.Application             : Started Application in 6.244 seconds (JVM running for 10.709)
+2020-05-14 06:10:47.974  INFO 5262 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-14 06:10:47.975  INFO 5262 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-14 06:10:47.994  INFO 5262 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2020-05-14 06:10:48.090  INFO 5262 --- [http-nio-8081-exec-1] com.nie.elevator.business.Elevator       : 1589416848090.123 {liftId:1,state:IDLE,direction:NAN, person:0, toFloorNo:1}
+2020-05-14 06:10:51.205  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416851205.123 {liftId:1,state:TO_PICKUP,direction:UP, person:0, toFloorNo:9}
+2020-05-14 06:10:51.206  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416851205.123 {liftId:1,state:TO_PICKUP,direction:UP, person:0, toFloorNo:9}
