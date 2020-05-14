@@ -1,39 +1,8 @@
-1. This is a web application.
 
-2. Technologies used:
 
-  Front-end:   AngularJS, Bootstrap(responsive)
+Returns a message stating that lift would be in x seconds to requester in floor 'fromFloor' Each lift would take 3 seconds to travel between two floors. Each lift would stop 4 seconds on the floor to pick and/or drop a person. To understand whats going in lift, each lift would emit signals every time its state changes. Available states:
 
-  Back-end:    Spring Boot, Spring Data, JAP ORM, Java8, Mockito, Spring MVC Test Framework, DBUnit
-               Front-end talks to back-end via Restful API.
+IDLE - no job. TO_PICKUP - moving to the floor to pick up the person PICKUP - picking up the person. TO_DROPOFF - moving to the destination floor DROPOFF - dropping off the person on the floor Emit signal should be printed as logs along with floor no, direction (NAN, UP or DOWN), passenger count.
 
-  Database:    Spring Boot embedded hsqldb.
+Modified from : https://github.com/nielicheng/ElevatorApplication/tree/master/src
 
-  Build Tool:  Maven3
-
-3. How to build
-  3.1 Download maven3 on your computer. Add its bin folder to %path% environment variable.
-  3.2 Download JDK8. Add its bin folder to %path% environment variable. Set JAVA_HOME environment variable, point to JDK home folder. 
-  3.3 From command line console, go to ElevatorApplication folder.
-  3.4 Run "mvn package" to build, unit test and package it. ElevatorMonitor.jar will be generated in target folder.
-
-4. How to run
-  From command line console, go to ElevatorApplication folder.
-  Run following command
-
-    java -jar target/ElevatorMonitor.jar --server.port=8082
-
-  This will start the application and listen on port 8082. You can change the port if it is used by other application.
-
-5. In ElevatorApplication folder, there are two files build.bat.txt and run.bat.txt.
-   If you use Windows, rename these files to build.bat and run.bat, change JAVA_HOME and M2_HOME in these files to point to your JDK and MAVEN folder.
-   Then run build.bat to build and run.bat to start the application.
-
-6. How to test
-   In a browser(Firefox or Chrome), visit http://localhost:8082/
-   Type in the number of people and select the level you want to go. You will see the movement of number in elevator column.
-   The movement happens every 5 seconds. Green number means the elevator is idle. Red means it is doing a job.
-   
-   To view elevator movement tracking, visit http://localhost:8082/elevatormovements This will list all movements for all elevators.
-   http://localhost:8082/elevatormovements/A will only list movements of elevator A.
-   
