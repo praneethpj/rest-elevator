@@ -103,3 +103,9 @@
 2020-05-14 06:10:48.090  INFO 5262 --- [http-nio-8081-exec-1] com.nie.elevator.business.Elevator       : 1589416848090.123 {liftId:1,state:IDLE,direction:NAN, person:0, toFloorNo:1}
 2020-05-14 06:10:51.205  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416851205.123 {liftId:1,state:TO_PICKUP,direction:UP, person:0, toFloorNo:9}
 2020-05-14 06:10:51.206  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416851205.123 {liftId:1,state:TO_PICKUP,direction:UP, person:0, toFloorNo:9}
+2020-05-14 06:10:55.210  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416855210.123 {liftId:1,state:PICKUP,direction:UP, person:0, toFloorNo:9}
+2020-05-14 06:10:55.210  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416855210.123 {liftId:1,state:PICKUP,direction:UP, person:0, toFloorNo:9}
+2020-05-14 06:10:58.213  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416858213.123 {liftId:1,state:TO_PICKUP,direction:DOWN, person:0, toFloorNo:5}
+2020-05-14 06:10:58.214  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416858214.123 {liftId:1,state:TO_PICKUP,direction:DOWN, person:0, toFloorNo:5}
+2020-05-14 06:11:02.217  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416862217.123 {liftId:1,state:IDLE,direction:DOWN, person:0, toFloorNo:1}
+2020-05-14 06:11:02.218  INFO 5262 --- [SimpleAsyncTaskExecutor-1] com.nie.elevator.business.Elevator       : 1589416862218.123 {liftId:1,state:DROPOFF,direction:DOWN, person:0, toFloorNo:1}
